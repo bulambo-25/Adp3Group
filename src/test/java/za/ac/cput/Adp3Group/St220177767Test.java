@@ -30,17 +30,22 @@ public class St220177767Test
     public void testEquality()
     {
         assertEquals(Bulambo,Bulambo);
+        //Testing Asserts that two objects are equal.
+
     }
     @Test
     public void testIdentity()
     {
         assertSame(Bulambo,Prince);
+        //Testing Asserts that two objects are Same.
     }
 
 
     @Test(timeout = 10000)
-    public void TestTimeout() throws InterruptedException {
+    public void TestTimeout() throws InterruptedException
+    {
         TimeUnit.SECONDS.sleep(2);
+        //To specify the timeout period of a test case.
     }
     @Test
     public void testDisabling()
@@ -53,6 +58,6 @@ public class St220177767Test
         int num1=2,num2=3;
         int total=75;
         fail("deliberately made the test fail");
-
+        //The following test will fail on purpose
     }
 }
